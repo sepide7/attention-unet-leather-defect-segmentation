@@ -54,6 +54,21 @@ Model performance is evaluated using segmentation-specific metrics, including In
 
 ## 7. Experimental Results
 
+Experimental evaluations demonstrate that the attention-enhanced architecture improves defect localization consistency compared to the baseline U-Net, particularly in cases involving small or low-contrast defects.
+
+Qualitative results indicate cleaner segmentation boundaries and reduced false detections in highly textured regions.
+
+
 ## 8. Industrial Applicability
 
+The proposed system is suitable for integration into automated leather inspection pipelines. Its pixel-level output enables downstream decision-making such as defect grading, rejection, or process adjustment.
+
+The architecture is lightweight enough to support near real-time inference and can be adapted to other surface inspection domains with minimal modification.
+
+
 ## 9. Limitations and Future Work
+
+Although the proposed approach improves defect localization, performance may degrade under extreme lighting variations or in the presence of unseen defect types.
+
+Future work includes multi-spectral data integration, model compression for edge deployment, and weakly supervised learning to reduce annotation costs.
+
