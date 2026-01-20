@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code in your research, please cite the following paper."
+title: "ATTENTION U-NET–BASED APPROACH FOR AUTOMATED LEATHER DEFECT DETECTION"
+authors:
+  - family-names: "AKTAŞ"
+    given-names: "Hakan"
+    affiliation: "Niğde Ömer Halisdemir University, Computer Engineering, Türkiye"
+    orcid: "https://orcid.org/0000-0002-0188-7075"
+  - family-names: "KHOSHNOODAFSHARI"
+    given-names: "Sepideh"
+    affiliation: "Niğde Ömer Halisdemir University, Electrical and Electronics Engineering, Türkiye"
+    orcid: "https://orcid.org/0009-0001-4898-5684"
+year: 2025
+repository-code: "https://github.com/sepide7/attention-unet-leather-defect-segmentation"
+license: "MIT"
+keywords:
+  - Attention U-Net
+  - Semantic Segmentation
+  - Leather Defect Detection
+  - Surface Inspection
+  - Computer Vision
+  - Deep Learning
