@@ -37,9 +37,20 @@ The final model combines multi-scale feature extraction with attention-guided fe
 
 ## 4. Training Strategy
 
+The model is trained using supervised learning with pixel-level annotations. Data augmentation techniques such as random flipping, rotation, and intensity variation are applied to improve generalization across different leather textures.
+
+Training is performed using mini-batch gradient descent with early stopping based on validation performance to prevent overfitting. The learning rate is adjusted dynamically to stabilize convergence.
+
+
 ## 5. Loss Functions
 
+Due to the strong class imbalance between defect and non-defect pixels, a combination of region-based and pixel-wise loss functions is employed. This strategy encourages accurate boundary localization while maintaining robustness against sparse defect regions.
+
+
 ## 6. Evaluation Metrics
+
+Model performance is evaluated using segmentation-specific metrics, including Intersection over Union (IoU) and Dice coefficient. These metrics provide a balanced assessment of both region overlap and boundary accuracy, which are critical for industrial inspection tasks.
+
 
 ## 7. Experimental Results
 
