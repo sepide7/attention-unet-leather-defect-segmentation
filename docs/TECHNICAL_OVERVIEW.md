@@ -18,12 +18,22 @@ Key characteristics of the dataset include:
 
 All images are preprocessed to ensure consistent input resolution and normalized intensity distributions prior to training.
 
-
 ## 3. Model Architecture
 
+The proposed model is based on the U-Net encoder–decoder architecture, designed for pixel-level semantic segmentation tasks. To improve defect localization in complex leather textures, an attention mechanism is integrated into the skip connections.
+
 ### 3.1 Baseline U-Net
+
+The baseline architecture follows a symmetric encoder–decoder structure with skip connections that preserve spatial information lost during downsampling.
+
 ### 3.2 Attention Mechanism
+
+Attention gates are applied to the skip connections to selectively emphasize relevant feature regions while suppressing background noise. This mechanism enables the network to focus on defect-prone areas and reduces false positives caused by repetitive leather textures.
+
 ### 3.3 Final Architecture
+
+The final model combines multi-scale feature extraction with attention-guided feature fusion, resulting in improved localization accuracy without significantly increasing computational complexity.
+
 
 ## 4. Training Strategy
 
